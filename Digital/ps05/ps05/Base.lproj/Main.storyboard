@@ -108,7 +108,7 @@
                                         <rect key="frame" x="40" y="84" width="689" height="353"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Dynomite 2017">
+                                            <fragment content="Dynomite Eggs">
                                                 <attributes>
                                                     <color key="NSColor" red="0.129754176501436" green="0.057454427083333336" blue="0.44056532118055558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="125" name="Chalkduster"/>
