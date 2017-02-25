@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="9dK-4p-CbE">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="9dK-4p-CbE">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -9,6 +14,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="9dK-4p-CbE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cX7-NP-Gll">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -37,8 +43,8 @@
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                         <size key="titleShadowOffset" width="0.0" height="5"/>
                                         <state key="normal" title="Back">
-                                            <color key="titleColor" red="0.99607849120000003" green="0.0" blue="0.023529414089999999" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.98106265068054199" green="0.0" blue="0.043105535209178925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="backButtonPressed:" destination="dZs-QD-W4o" eventType="touchUpInside" id="fJG-5M-fCw"/>
@@ -50,8 +56,8 @@
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
                                         <size key="titleShadowOffset" width="0.0" height="5"/>
                                         <state key="normal" title="New Puzzle">
-                                            <color key="titleColor" red="0.99607849120000003" green="0.11372549830000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="push" identifier="" id="qbS-Kp-iQ8"/>
@@ -63,8 +69,8 @@
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
                                         <size key="titleShadowOffset" width="0.0" height="5"/>
                                         <state key="normal" title="Load Puzzle">
-                                            <color key="titleColor" red="0.99607849120000003" green="0.11372549830000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="wil-74-Gwx" kind="modal" identifier="loadPuzzleStarter" modalPresentationStyle="formSheet" id="LqQ-kx-LnQ"/>
@@ -77,8 +83,8 @@
                                         <inset key="contentEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
                                         <size key="titleShadowOffset" width="0.0" height="5"/>
                                         <state key="normal" title="Design">
-                                            <color key="titleColor" red="0.99607849120000003" green="0.11372549830000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="lfc-hQ-nT5" kind="push" id="Fua-I8-sfg"/>
@@ -91,8 +97,8 @@
                                         <inset key="titleEdgeInsets" minX="0.0" minY="-25" maxX="0.0" maxY="0.0"/>
                                         <size key="titleShadowOffset" width="0.0" height="5"/>
                                         <state key="normal" title="Play">
-                                            <color key="titleColor" red="0.99607849120000003" green="0.0" blue="0.023529414089999999" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.98106265068054199" green="0.0" blue="0.043105535209178925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="playButtonPressed:" destination="dZs-QD-W4o" eventType="touchUpInside" id="ych-XU-8AD"/>
@@ -102,32 +108,32 @@
                                         <rect key="frame" x="40" y="84" width="689" height="353"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Bubble Blast Saga">
+                                            <fragment content="Dynomite 2017">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.129754176501436" green="0.67317044005102034" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" red="0.129754176501436" green="0.057454427083333336" blue="0.44056532118055558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="125" name="Chalkduster"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.88754070684533104" green="0.90754544005102045" blue="0.063366579879934631" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="shadowColor" red="0.88754070684533104" green="0.90754544005102045" blue="0.063366579879934631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="shadowOffset" width="0.0" height="6"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-OR-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="38" id="UfP-5s-t2i">
                                         <rect key="frame" x="303" y="647" width="162" height="77"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="112"/>
-                                        <color key="textColor" red="0.12941176470588234" green="0.67450980392156867" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="textColor" red="0.13191232085227966" green="0.62941306829452515" blue="0.010689942166209221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.88627450980392153" green="0.90588235294117647" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="shadowColor" red="0.88627450980392153" green="0.90588235294117647" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="shadowOffset" width="0.0" height="4"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="i4p-s2-I7d"/>
@@ -160,7 +166,7 @@
                                     <view contentMode="scaleToFill" id="fHN-ut-9CQ" customClass="ProjectileLaunchPath">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="970"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="wZx-Fn-do2" userLabel="Reserves">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="970"/>
@@ -187,7 +193,7 @@
                                         </subviews>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="aj5-RA-gtL" appends="YES" id="uzW-2r-bSj"/>
@@ -204,8 +210,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="LOAD">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="wil-74-Gwx" kind="modal" identifier="loadTableView" modalPresentationStyle="formSheet" id="d9x-0w-ZnA"/>
@@ -217,8 +223,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="SAVE">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOd-dR-Q3E"/>
@@ -230,22 +236,21 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="BACK">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKz-NQ-dpU"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="fOX-x6-Dtn"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="cannon" destination="fVr-DP-3i8" id="S4T-VX-5y5"/>
                         <outlet property="cannonBase" destination="V8K-Gi-BlG" id="gtL-iJ-drL"/>
@@ -280,20 +285,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="RFi-cP-Qqg">
                                 <rect key="frame" x="0.0" y="82" width="540" height="473"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.93392042022430399" green="1" blue="0.57586032364293782" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93392042022430399" green="1" blue="0.57586032364293782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ZKg-dQ-loH">
                                     <rect key="frame" x="0.0" y="122" width="540" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="tableCell" rowHeight="100" id="alq-ve-Chp">
                                         <rect key="frame" x="0.0" y="22" width="540" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alq-ve-Chp" id="1AB-xX-nXa">
-                                            <rect key="frame" x="0.0" y="0.0" width="540" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -306,11 +311,11 @@
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ckC-7g-Zs6">
                                 <rect key="frame" x="0.0" y="553" width="540" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94117653369999998" green="0.1215686351" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.91354107856750488" green="0.0" blue="0.11083686351776123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="5eG-gJ-tUN" kind="unwind" unwindAction="unwindFromLoadView:" id="hgZ-Ho-tng"/>
@@ -319,13 +324,13 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Saved Files" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eBO-n6-A1B">
                                 <rect key="frame" x="0.0" y="0.0" width="540" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="p48-5C-pUt"/>
                     <connections>
@@ -436,8 +441,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="RESET">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="resetButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="WGc-Cr-kcp"/>
@@ -449,8 +454,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="BACK">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="backButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="ifx-Y3-nVK"/>
@@ -462,8 +467,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="START">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="push" identifier="testCurrentGrid" id="zgz-ZH-GqB"/>
@@ -475,8 +480,8 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="LOAD">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="wil-74-Gwx" kind="modal" identifier="loadTableView" modalPresentationStyle="formSheet" id="MiH-sd-lcC"/>
@@ -488,18 +493,18 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="SAVE">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="saveButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="xjO-v5-w4z"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                         <gestureRecognizers/>
                         <connections>
