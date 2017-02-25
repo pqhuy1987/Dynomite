@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="9dK-4p-CbE">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wzS-jG-Tdo">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="9dK-4p-CbE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cX7-NP-Gll">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dZs-QD-W4o" kind="relationship" relationship="rootViewController" id="RtH-57-0Oh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brF-fO-Ahy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2970" y="-1308"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="rRl-OM-1QM">
+            <objects>
+                <viewController definesPresentationContext="YES" id="dZs-QD-W4o" customClass="MainScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBA-cT-f7e">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="1yr-K2-im6">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d4p-Pd-pFM">
+                                        <rect key="frame" x="328" y="841" width="112" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="0.0" height="5"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.98106265068054199" green="0.0" blue="0.043105535209178925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="dZs-QD-W4o" eventType="touchUpInside" id="fJG-5M-fCw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xt6-t8-qch">
+                                        <rect key="frame" x="997" y="536" width="458" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
+                                        <size key="titleShadowOffset" width="0.0" height="5"/>
+                                        <state key="normal" title="New Puzzle">
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="push" identifier="" id="qbS-Kp-iQ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0BC-YD-cMY">
+                                        <rect key="frame" x="1013" y="729" width="494" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
+                                        <size key="titleShadowOffset" width="0.0" height="5"/>
+                                        <state key="normal" title="Load Puzzle">
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wil-74-Gwx" kind="modal" identifier="loadPuzzleStarter" modalPresentationStyle="formSheet" id="LqQ-kx-LnQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gbf-Px-3FX">
+                                        <rect key="frame" x="251" y="732" width="266" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="0.0" height="5"/>
+                                        <state key="normal" title="Design">
+                                            <color key="titleColor" red="0.98125416040420532" green="0.0" blue="0.027016932144761086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="lfc-hQ-nT5" kind="push" id="Fua-I8-sfg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AzE-Mc-77Y">
+                                        <rect key="frame" x="295" y="537" width="178" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="70"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="-25" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="0.0" height="5"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.98106265068054199" green="0.0" blue="0.043105535209178925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="dZs-QD-W4o" eventType="touchUpInside" id="ych-XU-8AD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wDR-vs-MNg">
+                                        <rect key="frame" x="40" y="84" width="689" height="353"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Dynomite 2017">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.129754176501436" green="0.057454427083333336" blue="0.44056532118055558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="125" name="Chalkduster"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.88754070684533104" green="0.90754544005102045" blue="0.063366579879934631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="6"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-OR-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="38" id="UfP-5s-t2i">
+                                        <rect key="frame" x="303" y="647" width="162" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="112"/>
+                                        <color key="textColor" red="0.13191232085227966" green="0.62941306829452515" blue="0.010689942166209221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.88627450980392153" green="0.90588235294117647" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="4"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="i4p-s2-I7d"/>
+                    <connections>
+                        <outlet property="backButton" destination="d4p-Pd-pFM" id="iep-EL-DpZ"/>
+                        <outlet property="designButton" destination="gbf-Px-3FX" id="K0S-0L-cnY"/>
+                        <outlet property="loadPuzzleButton" destination="0BC-YD-cMY" id="RYo-4v-I30"/>
+                        <outlet property="mainView" destination="1yr-K2-im6" id="EDI-XG-sJ4"/>
+                        <outlet property="playButton" destination="AzE-Mc-77Y" id="LHc-mU-Eko"/>
+                        <outlet property="randomPuzzleButton" destination="xt6-t8-qch" id="fna-AN-O38"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="startGamePlayWithLoad" id="Yn3-gQ-W40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="le0-qA-dS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1654" y="-1323"/>
+        </scene>
+        <!--Gameplay View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameplayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="L1q-pB-VWg">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="970"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="fHN-ut-9CQ" customClass="ProjectileLaunchPath">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="970"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="wZx-Fn-do2" userLabel="Reserves">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="970"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-red.png" id="i8A-eO-zUf">
+                                                <rect key="frame" x="704" y="906" width="64" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-blue.png" id="c3V-Df-Lap">
+                                                <rect key="frame" x="637" y="906" width="64" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fVr-DP-3i8">
+                                                <rect key="frame" x="344" y="835" width="80" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cannon-base-cut.png" id="V8K-Gi-BlG">
+                                                <rect key="frame" x="336" y="906" width="97" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aj5-RA-gtL" appends="YES" id="uzW-2r-bSj"/>
+                                    <outletCollection property="gestureRecognizers" destination="LcB-ym-C5b" appends="YES" id="lMH-57-Ow2"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="FS5-aZ-pnE">
+                                <rect key="frame" x="0.0" y="970" width="768" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Xs-o1-jBP">
+                                        <rect key="frame" x="611" y="12" width="66" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="LOAD">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wil-74-Gwx" kind="modal" identifier="loadTableView" modalPresentationStyle="formSheet" id="d9x-0w-ZnA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8G5-wF-VB5">
+                                        <rect key="frame" x="685" y="12" width="63" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOd-dR-Q3E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1U3-Vx-cTb">
+                                        <rect key="frame" x="20" y="12" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="BACK">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKz-NQ-dpU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fOX-x6-Dtn"/>
+                    <connections>
+                        <outlet property="cannon" destination="fVr-DP-3i8" id="S4T-VX-5y5"/>
+                        <outlet property="cannonBase" destination="V8K-Gi-BlG" id="gtL-iJ-drL"/>
+                        <outlet property="gameArea" destination="L1q-pB-VWg" id="Ylr-gg-ESR"/>
+                        <outlet property="primaryReserveBubble" destination="c3V-Df-Lap" id="Mm1-FP-ZkV"/>
+                        <outlet property="projectilePath" destination="fHN-ut-9CQ" id="qB8-Nx-Qms"/>
+                        <outlet property="secondaryReserveBubble" destination="i8A-eO-zUf" id="nOm-Ab-lu9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="aj5-RA-gtL">
+                    <connections>
+                        <action selector="panHandler:" destination="BYZ-38-t0r" id="2P8-hG-l8d"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="LcB-ym-C5b">
+                    <connections>
+                        <action selector="tapHandler:" destination="BYZ-38-t0r" id="IdQ-kY-iQj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="813" y="-361"/>
+        </scene>
+        <!--Load View Controller-->
+        <scene sceneID="E82-ch-CiD">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="formSheet" id="wil-74-Gwx" customClass="LoadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9c3-qc-nK7">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="RFi-cP-Qqg">
+                                <rect key="frame" x="0.0" y="82" width="540" height="473"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.93392042022430399" green="1" blue="0.57586032364293782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ZKg-dQ-loH">
+                                    <rect key="frame" x="0.0" y="122" width="540" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="tableCell" rowHeight="100" id="alq-ve-Chp">
+                                        <rect key="frame" x="0.0" y="22" width="540" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alq-ve-Chp" id="1AB-xX-nXa">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wil-74-Gwx" id="NiP-Eo-2Cf"/>
+                                    <outlet property="delegate" destination="wil-74-Gwx" id="fQY-hN-JnP"/>
+                                </connections>
+                            </tableView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ckC-7g-Zs6">
+                                <rect key="frame" x="0.0" y="553" width="540" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91354107856750488" green="0.0" blue="0.11083686351776123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5eG-gJ-tUN" kind="unwind" unwindAction="unwindFromLoadView:" id="hgZ-Ho-tng"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Saved Files" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eBO-n6-A1B">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p48-5C-pUt"/>
+                    <connections>
+                        <outlet property="tableView" destination="RFi-cP-Qqg" id="7lv-8Y-h3E"/>
+                        <segue destination="5eG-gJ-tUN" kind="unwind" identifier="unwind" unwindAction="unwindFromLoadView:" id="nXO-Z1-J8l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYn-NO-bjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5eG-gJ-tUN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="-1287"/>
+        </scene>
+        <!--Designer View Controller-->
+        <scene sceneID="h6u-Co-shc">
+            <objects>
+                <viewController id="lfc-hQ-nT5" customClass="DesignerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTn-cB-xj6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="RYs-nD-NcR">
+                                <rect key="frame" x="0.0" y="902" width="768" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-blue.png" id="aLi-qW-9ZY">
+                                        <rect key="frame" x="20" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="tk5-La-JL7" appends="YES" id="D2z-Dg-kHE"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-red.png" id="7nS-Hw-LIC">
+                                        <rect key="frame" x="86" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eez-Cb-gm0" appends="YES" id="V1G-FR-I46"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-orange.png" id="NPF-vM-4vI">
+                                        <rect key="frame" x="152" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0by-zc-xRq" appends="YES" id="yMa-8f-DxM"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-green.png" id="dT7-Nn-XAq">
+                                        <rect key="frame" x="218" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pm7-Gd-H8S" appends="YES" id="XnQ-sj-kbU"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-lightning.png" id="Zng-ey-h95">
+                                        <rect key="frame" x="492" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="fFG-1e-Oem" appends="YES" id="xa4-cR-avu"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-star.png" id="3q6-YQ-cmu">
+                                        <rect key="frame" x="558" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7g0-PF-IwZ" appends="YES" id="RxV-YK-NYp"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-bomb.png" id="10l-MH-bSy">
+                                        <rect key="frame" x="624" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cys-R8-Yhw" appends="YES" id="cNO-hd-wIl"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-rainbow.png" id="azN-P6-8Ed">
+                                        <rect key="frame" x="690" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qlW-ju-C2l" appends="YES" id="nL6-Tt-F4y"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-indestructible.png" id="p7R-9f-YxS">
+                                        <rect key="frame" x="426" y="11" width="58" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Gnr-mN-kEK" appends="YES" id="x0h-iX-VTW"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" alpha="0.30000001192092896" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eraser-1.png" id="L24-0K-upI">
+                                        <rect key="frame" x="284" y="8" width="69" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5O0-Lb-nY5" appends="YES" id="nEb-Er-m4e"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QrJ-al-Dd8">
+                                        <rect key="frame" x="531" y="85" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="WGc-Cr-kcp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Js3-kQ-9Bu">
+                                        <rect key="frame" x="20" y="85" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="BACK">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="ifx-Y3-nVK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZN-kv-uP6">
+                                        <rect key="frame" x="351" y="85" width="66" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="push" identifier="testCurrentGrid" id="zgz-ZH-GqB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N6q-sg-Kyg">
+                                        <rect key="frame" x="611" y="85" width="66" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="LOAD">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wil-74-Gwx" kind="modal" identifier="loadTableView" modalPresentationStyle="formSheet" id="MiH-sd-lcC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U5I-47-Bd6">
+                                        <rect key="frame" x="685" y="85" width="63" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999973" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="lfc-hQ-nT5" eventType="touchUpInside" id="xjO-v5-w4z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b4o-cu-6Xg" appends="YES" id="9Y4-uo-BcF"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="rLG-KH-4Xe"/>
+                    <connections>
+                        <outlet property="gameArea" destination="jTn-cB-xj6" id="V0p-TM-Sct"/>
+                        <outlet property="palette" destination="RYs-nD-NcR" id="jE4-dw-Mgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajO-60-L8z" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gnr-mN-kEK">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="Nwb-AI-K4D"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fFG-1e-Oem">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="5wh-ix-0LR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7g0-PF-IwZ">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="O8l-LN-sXf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cys-R8-Yhw">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="oVA-Bn-dMb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eez-Cb-gm0">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="Akm-Kd-M0V"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tk5-La-JL7">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="NjM-B1-mYO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5O0-Lb-nY5">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="86p-NF-opB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0by-zc-xRq">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="3Un-JX-DcN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pm7-Gd-H8S">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="9NH-w4-ftI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="b4o-cu-6Xg">
+                    <connections>
+                        <action selector="panHandler:" destination="lfc-hQ-nT5" id="ePy-aC-Nzn"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="qlW-ju-C2l">
+                    <connections>
+                        <action selector="paletteTapHandler:" destination="lfc-hQ-nT5" id="msd-Dc-alL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-425" y="-2149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubble-blue.png" width="80" height="80"/>
+        <image name="bubble-bomb.png" width="80" height="80"/>
+        <image name="bubble-green.png" width="80" height="80"/>
+        <image name="bubble-indestructible.png" width="160" height="160"/>
+        <image name="bubble-lightning.png" width="80" height="80"/>
+        <image name="bubble-orange.png" width="80" height="80"/>
+        <image name="bubble-rainbow.png" width="80" height="80"/>
+        <image name="bubble-red.png" width="80" height="80"/>
+        <image name="bubble-star.png" width="80" height="80"/>
+        <image name="cannon-base-cut.png" width="400" height="200"/>
+        <image name="eraser-1.png" width="254" height="152"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="qbS-Kp-iQ8"/>
+        <segue reference="LqQ-kx-LnQ"/>
+    </inferredMetricsTieBreakers>
+</document>

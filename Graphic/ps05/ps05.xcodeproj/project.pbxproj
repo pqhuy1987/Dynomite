@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D02485018BA5A1D00D824CB /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D02484F18BA5A1D00D824CB /* MainScreenViewController.m */; };
+		0D0D644918C1FB870092D005 /* bubble-rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D644718C1FB870092D005 /* bubble-rainbow.png */; };
+		0D0D644A18C1FB870092D005 /* back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D644818C1FB870092D005 /* back2.jpg */; };
+		0D16B16718C230540011C6F7 /* GameBubbleRainbow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D16B16618C230540011C6F7 /* GameBubbleRainbow.m */; };
+		0D4DF5FA18C3741800805434 /* Design 1 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4DF5F718C3741800805434 /* Design 1 */; };
+		0D4DF5FB18C3741800805434 /* Design 2 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4DF5F818C3741800805434 /* Design 2 */; };
+		0D4DF5FC18C3741800805434 /* Design 3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4DF5F918C3741800805434 /* Design 3 */; };
+		0D4FDC1318BC7344008D1EF0 /* bubble-bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC0C18BC7344008D1EF0 /* bubble-bomb.png */; };
+		0D4FDC1418BC7344008D1EF0 /* bubble-burst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC0D18BC7344008D1EF0 /* bubble-burst.png */; };
+		0D4FDC1618BC7344008D1EF0 /* bubble-lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC0F18BC7344008D1EF0 /* bubble-lightning.png */; };
+		0D4FDC1718BC7344008D1EF0 /* bubble-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC1018BC7344008D1EF0 /* bubble-star.png */; };
+		0D4FDC1818BC7344008D1EF0 /* cannon-base.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC1118BC7344008D1EF0 /* cannon-base.png */; };
+		0D4FDC1918BC7344008D1EF0 /* cannon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FDC1218BC7344008D1EF0 /* cannon.png */; };
+		0D64E48818BF74EE005B63FC /* GameBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E48518BF74ED005B63FC /* GameBubble.m */; };
+		0D64E48918BF74EE005B63FC /* GameBubbleBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E48718BF74ED005B63FC /* GameBubbleBasic.m */; };
+		0D64E48E18BFA3A9005B63FC /* GameBubbleLightning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E48D18BFA3A9005B63FC /* GameBubbleLightning.m */; };
+		0D64E49118BFA56C005B63FC /* GameBubbleBomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E49018BFA56C005B63FC /* GameBubbleBomb.m */; };
+		0D64E49418BFA57E005B63FC /* GameBubbleIndestructible.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E49318BFA57E005B63FC /* GameBubbleIndestructible.m */; };
+		0D64E49718BFA58D005B63FC /* GameBubbleStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D64E49618BFA58D005B63FC /* GameBubbleStar.m */; };
+		0D65D06E18C26F1600B860D8 /* bolt_tesla_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06318C26F1600B860D8 /* bolt_tesla_0001.png */; };
+		0D65D06F18C26F1600B860D8 /* bolt_tesla_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06418C26F1600B860D8 /* bolt_tesla_0002.png */; };
+		0D65D07018C26F1600B860D8 /* bolt_tesla_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06518C26F1600B860D8 /* bolt_tesla_0003.png */; };
+		0D65D07118C26F1600B860D8 /* bolt_tesla_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06618C26F1600B860D8 /* bolt_tesla_0004.png */; };
+		0D65D07218C26F1600B860D8 /* bolt_tesla_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06718C26F1600B860D8 /* bolt_tesla_0005.png */; };
+		0D65D07318C26F1600B860D8 /* bolt_tesla_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06818C26F1600B860D8 /* bolt_tesla_0006.png */; };
+		0D65D07418C26F1600B860D8 /* bolt_tesla_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06918C26F1600B860D8 /* bolt_tesla_0007.png */; };
+		0D65D07518C26F1600B860D8 /* bolt_tesla_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06A18C26F1600B860D8 /* bolt_tesla_0008.png */; };
+		0D65D07618C26F1600B860D8 /* bolt_tesla_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06B18C26F1600B860D8 /* bolt_tesla_0009.png */; };
+		0D65D07718C26F1600B860D8 /* bolt_tesla_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06C18C26F1600B860D8 /* bolt_tesla_0010.png */; };
+		0D65D07818C26F1600B860D8 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D06D18C26F1600B860D8 /* fire.png */; };
+		0D65D07A18C2735600B860D8 /* burst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D65D07918C2735600B860D8 /* burst.png */; };
+		0D65D07D18C27EF300B860D8 /* SkyBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D65D07C18C27EF300B860D8 /* SkyBackgroundViewController.m */; };
+		0D672F9918C34C3800DC1230 /* cannon-base-cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D672F9818C34C3800DC1230 /* cannon-base-cut.png */; };
+		0DA05D2418B9DB58008F6E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D2318B9DB58008F6E39 /* Foundation.framework */; };
+		0DA05D2618B9DB58008F6E39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D2518B9DB58008F6E39 /* CoreGraphics.framework */; };
+		0DA05D2818B9DB58008F6E39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D2718B9DB58008F6E39 /* UIKit.framework */; };
+		0DA05D2E18B9DB58008F6E39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D2C18B9DB58008F6E39 /* InfoPlist.strings */; };
+		0DA05D3018B9DB58008F6E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D2F18B9DB58008F6E39 /* main.m */; };
+		0DA05D3618B9DB58008F6E39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D3518B9DB58008F6E39 /* Images.xcassets */; };
+		0DA05D3D18B9DB58008F6E39 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D3C18B9DB58008F6E39 /* XCTest.framework */; };
+		0DA05D3E18B9DB58008F6E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D2318B9DB58008F6E39 /* Foundation.framework */; };
+		0DA05D3F18B9DB58008F6E39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA05D2718B9DB58008F6E39 /* UIKit.framework */; };
+		0DA05D4718B9DB58008F6E39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D4518B9DB58008F6E39 /* InfoPlist.strings */; };
+		0DA05D4918B9DB58008F6E39 /* ps05Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D4818B9DB58008F6E39 /* ps05Tests.m */; };
+		0DA05D5818B9DC18008F6E39 /* CircularObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D5718B9DC18008F6E39 /* CircularObjectModel.m */; };
+		0DA05D6118B9DC2D008F6E39 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D5918B9DC2D008F6E39 /* background.png */; };
+		0DA05D6218B9DC2D008F6E39 /* bubble-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D5A18B9DC2D008F6E39 /* bubble-blue.png */; };
+		0DA05D6318B9DC2D008F6E39 /* bubble-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D5B18B9DC2D008F6E39 /* bubble-green.png */; };
+		0DA05D6418B9DC2D008F6E39 /* bubble-orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D5C18B9DC2D008F6E39 /* bubble-orange.png */; };
+		0DA05D6518B9DC2D008F6E39 /* bubble-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D5D18B9DC2D008F6E39 /* bubble-red.png */; };
+		0DA05D7818B9DC3D008F6E39 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D6818B9DC3D008F6E39 /* Constants.m */; };
+		0DA05D7918B9DC3D008F6E39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D6A18B9DC3D008F6E39 /* InfoPlist.strings */; };
+		0DA05D7B18B9DC3D008F6E39 /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D6E18B9DC3D008F6E39 /* PhysicsEngine.m */; };
+		0DA05D7C18B9DC3D008F6E39 /* PhysicsEngineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D7018B9DC3D008F6E39 /* PhysicsEngineObject.m */; };
+		0DA05D7D18B9DC3D008F6E39 /* ProjectileLaunchPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D7318B9DC3D008F6E39 /* ProjectileLaunchPath.m */; };
+		0DA05D7E18B9DC3D008F6E39 /* TwoDVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D7518B9DC3D008F6E39 /* TwoDVector.m */; };
+		0DA05D7F18B9DC3D008F6E39 /* GameplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D7718B9DC3D008F6E39 /* GameplayViewController.m */; };
+		0DA05D8618B9DD3D008F6E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D8518B9DD3D008F6E39 /* AppDelegate.m */; };
+		0DA05D9118B9FD4C008F6E39 /* eraser-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D8718B9FD4C008F6E39 /* eraser-1.png */; };
+		0DA05D9218B9FD4C008F6E39 /* GameBubbleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D8818B9FD4C008F6E39 /* GameBubbleModel.m */; };
+		0DA05D9318B9FD4C008F6E39 /* GameBubbleBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D8A18B9FD4C008F6E39 /* GameBubbleBasicModel.m */; };
+		0DA05D9418B9FD4C008F6E39 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D8C18B9FD4C008F6E39 /* DesignerViewController.m */; };
+		0DA05D9518B9FD4C008F6E39 /* DesignerViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D8E18B9FD4C008F6E39 /* DesignerViewControllerExtension.m */; };
+		0DA05D9618B9FD4C008F6E39 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA05D9018B9FD4C008F6E39 /* LoadViewController.m */; };
+		0DA05D9918B9FF8D008F6E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA05D9718B9FF8D008F6E39 /* Main.storyboard */; };
+		0DCA215518BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA215418BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.m */; };
+		0DCA215818BE795E006D9DA7 /* SaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA215718BE795E006D9DA7 /* SaveController.m */; };
+		0DFE69A618C9013800490441 /* bubble-indestructible.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE69A518C9013800490441 /* bubble-indestructible.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DA05D4018B9DB58008F6E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DA05D1818B9DB58008F6E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DA05D1F18B9DB58008F6E39;
+			remoteInfo = ps05;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D02484E18BA5A1D00D824CB /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
+		0D02484F18BA5A1D00D824CB /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		0D0D644718C1FB870092D005 /* bubble-rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-rainbow.png"; sourceTree = "<group>"; };
+		0D0D644818C1FB870092D005 /* back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back2.jpg; sourceTree = "<group>"; };
+		0D16B16518C230540011C6F7 /* GameBubbleRainbow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleRainbow.h; sourceTree = "<group>"; };
+		0D16B16618C230540011C6F7 /* GameBubbleRainbow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleRainbow.m; sourceTree = "<group>"; };
+		0D4DF5F718C3741800805434 /* Design 1 */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Design 1"; sourceTree = "<group>"; };
+		0D4DF5F818C3741800805434 /* Design 2 */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Design 2"; sourceTree = "<group>"; };
+		0D4DF5F918C3741800805434 /* Design 3 */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Design 3"; sourceTree = "<group>"; };
+		0D4FDC0C18BC7344008D1EF0 /* bubble-bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-bomb.png"; sourceTree = "<group>"; };
+		0D4FDC0D18BC7344008D1EF0 /* bubble-burst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-burst.png"; sourceTree = "<group>"; };
+		0D4FDC0F18BC7344008D1EF0 /* bubble-lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-lightning.png"; sourceTree = "<group>"; };
+		0D4FDC1018BC7344008D1EF0 /* bubble-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-star.png"; sourceTree = "<group>"; };
+		0D4FDC1118BC7344008D1EF0 /* cannon-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon-base.png"; sourceTree = "<group>"; };
+		0D4FDC1218BC7344008D1EF0 /* cannon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannon.png; sourceTree = "<group>"; };
+		0D63B65318BB4704008A81E2 /* LoadViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadViewControllerDelegate.h; sourceTree = "<group>"; };
+		0D64E48418BF7482005B63FC /* GameBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubble.h; sourceTree = "<group>"; };
+		0D64E48518BF74ED005B63FC /* GameBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubble.m; sourceTree = "<group>"; };
+		0D64E48618BF74ED005B63FC /* GameBubbleBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBasic.h; sourceTree = "<group>"; };
+		0D64E48718BF74ED005B63FC /* GameBubbleBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleBasic.m; sourceTree = "<group>"; };
+		0D64E48C18BFA3A9005B63FC /* GameBubbleLightning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleLightning.h; sourceTree = "<group>"; };
+		0D64E48D18BFA3A9005B63FC /* GameBubbleLightning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleLightning.m; sourceTree = "<group>"; };
+		0D64E48F18BFA56C005B63FC /* GameBubbleBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBomb.h; sourceTree = "<group>"; };
+		0D64E49018BFA56C005B63FC /* GameBubbleBomb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleBomb.m; sourceTree = "<group>"; };
+		0D64E49218BFA57E005B63FC /* GameBubbleIndestructible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleIndestructible.h; sourceTree = "<group>"; };
+		0D64E49318BFA57E005B63FC /* GameBubbleIndestructible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleIndestructible.m; sourceTree = "<group>"; };
+		0D64E49518BFA58D005B63FC /* GameBubbleStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleStar.h; sourceTree = "<group>"; };
+		0D64E49618BFA58D005B63FC /* GameBubbleStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleStar.m; sourceTree = "<group>"; };
+		0D65D06318C26F1600B860D8 /* bolt_tesla_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0001.png; path = bolt_tesla/bolt_tesla_0001.png; sourceTree = "<group>"; };
+		0D65D06418C26F1600B860D8 /* bolt_tesla_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0002.png; path = bolt_tesla/bolt_tesla_0002.png; sourceTree = "<group>"; };
+		0D65D06518C26F1600B860D8 /* bolt_tesla_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0003.png; path = bolt_tesla/bolt_tesla_0003.png; sourceTree = "<group>"; };
+		0D65D06618C26F1600B860D8 /* bolt_tesla_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0004.png; path = bolt_tesla/bolt_tesla_0004.png; sourceTree = "<group>"; };
+		0D65D06718C26F1600B860D8 /* bolt_tesla_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0005.png; path = bolt_tesla/bolt_tesla_0005.png; sourceTree = "<group>"; };
+		0D65D06818C26F1600B860D8 /* bolt_tesla_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0006.png; path = bolt_tesla/bolt_tesla_0006.png; sourceTree = "<group>"; };
+		0D65D06918C26F1600B860D8 /* bolt_tesla_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0007.png; path = bolt_tesla/bolt_tesla_0007.png; sourceTree = "<group>"; };
+		0D65D06A18C26F1600B860D8 /* bolt_tesla_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0008.png; path = bolt_tesla/bolt_tesla_0008.png; sourceTree = "<group>"; };
+		0D65D06B18C26F1600B860D8 /* bolt_tesla_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0009.png; path = bolt_tesla/bolt_tesla_0009.png; sourceTree = "<group>"; };
+		0D65D06C18C26F1600B860D8 /* bolt_tesla_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bolt_tesla_0010.png; path = bolt_tesla/bolt_tesla_0010.png; sourceTree = "<group>"; };
+		0D65D06D18C26F1600B860D8 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		0D65D07918C2735600B860D8 /* burst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burst.png; sourceTree = "<group>"; };
+		0D65D07B18C27EF300B860D8 /* SkyBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBackgroundViewController.h; sourceTree = "<group>"; };
+		0D65D07C18C27EF300B860D8 /* SkyBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBackgroundViewController.m; sourceTree = "<group>"; };
+		0D672F9818C34C3800DC1230 /* cannon-base-cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon-base-cut.png"; sourceTree = "<group>"; };
+		0DA05D2018B9DB58008F6E39 /* ps05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ps05.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA05D2318B9DB58008F6E39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0DA05D2518B9DB58008F6E39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0DA05D2718B9DB58008F6E39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0DA05D2B18B9DB58008F6E39 /* ps05-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ps05-Info.plist"; sourceTree = "<group>"; };
+		0DA05D2D18B9DB58008F6E39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DA05D2F18B9DB58008F6E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DA05D3118B9DB58008F6E39 /* ps05-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ps05-Prefix.pch"; sourceTree = "<group>"; };
+		0DA05D3518B9DB58008F6E39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DA05D3B18B9DB58008F6E39 /* ps05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ps05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA05D3C18B9DB58008F6E39 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0DA05D4418B9DB58008F6E39 /* ps05Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ps05Tests-Info.plist"; sourceTree = "<group>"; };
+		0DA05D4618B9DB58008F6E39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DA05D4818B9DB58008F6E39 /* ps05Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ps05Tests.m; sourceTree = "<group>"; };
+		0DA05D5618B9DC18008F6E39 /* CircularObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularObjectModel.h; sourceTree = "<group>"; };
+		0DA05D5718B9DC18008F6E39 /* CircularObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularObjectModel.m; sourceTree = "<group>"; };
+		0DA05D5918B9DC2D008F6E39 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0DA05D5A18B9DC2D008F6E39 /* bubble-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-blue.png"; sourceTree = "<group>"; };
+		0DA05D5B18B9DC2D008F6E39 /* bubble-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-green.png"; sourceTree = "<group>"; };
+		0DA05D5C18B9DC2D008F6E39 /* bubble-orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-orange.png"; sourceTree = "<group>"; };
+		0DA05D5D18B9DC2D008F6E39 /* bubble-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-red.png"; sourceTree = "<group>"; };
+		0DA05D6018B9DC2D008F6E39 /* GameBubbleBasicModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBasicModelDelegate.h; sourceTree = "<group>"; };
+		0DA05D6718B9DC3D008F6E39 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0DA05D6818B9DC3D008F6E39 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		0DA05D6B18B9DC3D008F6E39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0DA05D6D18B9DC3D008F6E39 /* PhysicsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsEngine.h; sourceTree = "<group>"; };
+		0DA05D6E18B9DC3D008F6E39 /* PhysicsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicsEngine.m; sourceTree = "<group>"; };
+		0DA05D6F18B9DC3D008F6E39 /* PhysicsEngineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsEngineObject.h; sourceTree = "<group>"; };
+		0DA05D7018B9DC3D008F6E39 /* PhysicsEngineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicsEngineObject.m; sourceTree = "<group>"; };
+		0DA05D7118B9DC3D008F6E39 /* PhysicsEngineObjectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsEngineObjectDelegate.h; sourceTree = "<group>"; };
+		0DA05D7218B9DC3D008F6E39 /* ProjectileLaunchPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileLaunchPath.h; sourceTree = "<group>"; };
+		0DA05D7318B9DC3D008F6E39 /* ProjectileLaunchPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileLaunchPath.m; sourceTree = "<group>"; };
+		0DA05D7418B9DC3D008F6E39 /* TwoDVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDVector.h; sourceTree = "<group>"; };
+		0DA05D7518B9DC3D008F6E39 /* TwoDVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDVector.m; sourceTree = "<group>"; };
+		0DA05D7618B9DC3D008F6E39 /* GameplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayViewController.h; sourceTree = "<group>"; };
+		0DA05D7718B9DC3D008F6E39 /* GameplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayViewController.m; sourceTree = "<group>"; };
+		0DA05D8418B9DD3D008F6E39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0DA05D8518B9DD3D008F6E39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DA05D8718B9FD4C008F6E39 /* eraser-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser-1.png"; sourceTree = "<group>"; };
+		0DA05D8818B9FD4C008F6E39 /* GameBubbleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleModel.m; sourceTree = "<group>"; };
+		0DA05D8918B9FD4C008F6E39 /* GameBubbleBasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBasicModel.h; sourceTree = "<group>"; };
+		0DA05D8A18B9FD4C008F6E39 /* GameBubbleBasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleBasicModel.m; sourceTree = "<group>"; };
+		0DA05D8B18B9FD4C008F6E39 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
+		0DA05D8C18B9FD4C008F6E39 /* DesignerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignerViewController.m; sourceTree = "<group>"; };
+		0DA05D8D18B9FD4C008F6E39 /* DesignerViewControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewControllerExtension.h; sourceTree = "<group>"; };
+		0DA05D8E18B9FD4C008F6E39 /* DesignerViewControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignerViewControllerExtension.m; sourceTree = "<group>"; };
+		0DA05D8F18B9FD4C008F6E39 /* LoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		0DA05D9018B9FD4C008F6E39 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
+		0DA05D9818B9FF8D008F6E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DA05D9A18B9FFDF008F6E39 /* GameBubbleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleModel.h; sourceTree = "<group>"; };
+		0DA269A618BE94BD00012E93 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		0DCA215318BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameplayViewController+PersistenceManagement.h"; sourceTree = "<group>"; };
+		0DCA215418BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GameplayViewController+PersistenceManagement.m"; sourceTree = "<group>"; };
+		0DCA215618BE795E006D9DA7 /* SaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveController.h; sourceTree = "<group>"; };
+		0DCA215718BE795E006D9DA7 /* SaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveController.m; sourceTree = "<group>"; };
+		0DCA215918BE7C3C006D9DA7 /* SaveControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveControllerDelegate.h; sourceTree = "<group>"; };
+		0DFE69A518C9013800490441 /* bubble-indestructible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-indestructible.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DA05D1D18B9DB58008F6E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D2618B9DB58008F6E39 /* CoreGraphics.framework in Frameworks */,
+				0DA05D2818B9DB58008F6E39 /* UIKit.framework in Frameworks */,
+				0DA05D2418B9DB58008F6E39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DA05D3818B9DB58008F6E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D3D18B9DB58008F6E39 /* XCTest.framework in Frameworks */,
+				0DA05D3F18B9DB58008F6E39 /* UIKit.framework in Frameworks */,
+				0DA05D3E18B9DB58008F6E39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D65D05918C23DC200B860D8 /* GameBubble Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D64E48418BF7482005B63FC /* GameBubble.h */,
+				0D64E48518BF74ED005B63FC /* GameBubble.m */,
+				0D64E48618BF74ED005B63FC /* GameBubbleBasic.h */,
+				0D64E48718BF74ED005B63FC /* GameBubbleBasic.m */,
+				0D64E48F18BFA56C005B63FC /* GameBubbleBomb.h */,
+				0D64E49018BFA56C005B63FC /* GameBubbleBomb.m */,
+				0D64E49218BFA57E005B63FC /* GameBubbleIndestructible.h */,
+				0D64E49318BFA57E005B63FC /* GameBubbleIndestructible.m */,
+				0D64E48C18BFA3A9005B63FC /* GameBubbleLightning.h */,
+				0D64E48D18BFA3A9005B63FC /* GameBubbleLightning.m */,
+				0D16B16518C230540011C6F7 /* GameBubbleRainbow.h */,
+				0D16B16618C230540011C6F7 /* GameBubbleRainbow.m */,
+				0D64E49518BFA58D005B63FC /* GameBubbleStar.h */,
+				0D64E49618BFA58D005B63FC /* GameBubbleStar.m */,
+			);
+			name = "GameBubble Controllers";
+			sourceTree = "<group>";
+		};
+		0D65D05A18C23DD200B860D8 /* GameBubble Models */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D8918B9FD4C008F6E39 /* GameBubbleBasicModel.h */,
+				0DA05D8A18B9FD4C008F6E39 /* GameBubbleBasicModel.m */,
+				0DA05D6018B9DC2D008F6E39 /* GameBubbleBasicModelDelegate.h */,
+				0DA05D9A18B9FFDF008F6E39 /* GameBubbleModel.h */,
+				0DA05D8818B9FD4C008F6E39 /* GameBubbleModel.m */,
+			);
+			name = "GameBubble Models";
+			sourceTree = "<group>";
+		};
+		0D65D05B18C23DE300B860D8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0DFE69A518C9013800490441 /* bubble-indestructible.png */,
+				0D672F9818C34C3800DC1230 /* cannon-base-cut.png */,
+				0D65D07918C2735600B860D8 /* burst.png */,
+				0D65D06318C26F1600B860D8 /* bolt_tesla_0001.png */,
+				0D65D06418C26F1600B860D8 /* bolt_tesla_0002.png */,
+				0D65D06518C26F1600B860D8 /* bolt_tesla_0003.png */,
+				0D65D06618C26F1600B860D8 /* bolt_tesla_0004.png */,
+				0D65D06718C26F1600B860D8 /* bolt_tesla_0005.png */,
+				0D65D06818C26F1600B860D8 /* bolt_tesla_0006.png */,
+				0D65D06918C26F1600B860D8 /* bolt_tesla_0007.png */,
+				0D65D06A18C26F1600B860D8 /* bolt_tesla_0008.png */,
+				0D65D06B18C26F1600B860D8 /* bolt_tesla_0009.png */,
+				0D65D06C18C26F1600B860D8 /* bolt_tesla_0010.png */,
+				0D65D06D18C26F1600B860D8 /* fire.png */,
+				0DA05D8718B9FD4C008F6E39 /* eraser-1.png */,
+				0D0D644818C1FB870092D005 /* back2.jpg */,
+				0DA05D5918B9DC2D008F6E39 /* background.png */,
+				0DA05D5A18B9DC2D008F6E39 /* bubble-blue.png */,
+				0D4FDC0C18BC7344008D1EF0 /* bubble-bomb.png */,
+				0D4FDC0D18BC7344008D1EF0 /* bubble-burst.png */,
+				0DA05D5B18B9DC2D008F6E39 /* bubble-green.png */,
+				0D4FDC0F18BC7344008D1EF0 /* bubble-lightning.png */,
+				0DA05D5C18B9DC2D008F6E39 /* bubble-orange.png */,
+				0D0D644718C1FB870092D005 /* bubble-rainbow.png */,
+				0DA05D5D18B9DC2D008F6E39 /* bubble-red.png */,
+				0D4FDC1018BC7344008D1EF0 /* bubble-star.png */,
+				0D4FDC1118BC7344008D1EF0 /* cannon-base.png */,
+				0D4FDC1218BC7344008D1EF0 /* cannon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0D65D05C18C23E0000B860D8 /* PhysicsEngine files */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D5618B9DC18008F6E39 /* CircularObjectModel.h */,
+				0DA05D5718B9DC18008F6E39 /* CircularObjectModel.m */,
+				0DA05D6D18B9DC3D008F6E39 /* PhysicsEngine.h */,
+				0DA05D6E18B9DC3D008F6E39 /* PhysicsEngine.m */,
+				0DA05D6F18B9DC3D008F6E39 /* PhysicsEngineObject.h */,
+				0DA05D7018B9DC3D008F6E39 /* PhysicsEngineObject.m */,
+				0DA05D7118B9DC3D008F6E39 /* PhysicsEngineObjectDelegate.h */,
+			);
+			name = "PhysicsEngine files";
+			sourceTree = "<group>";
+		};
+		0D65D05D18C23E1700B860D8 /* Designer Mode */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D8B18B9FD4C008F6E39 /* DesignerViewController.h */,
+				0DA05D8C18B9FD4C008F6E39 /* DesignerViewController.m */,
+				0DA05D8D18B9FD4C008F6E39 /* DesignerViewControllerExtension.h */,
+				0DA05D8E18B9FD4C008F6E39 /* DesignerViewControllerExtension.m */,
+			);
+			name = "Designer Mode";
+			sourceTree = "<group>";
+		};
+		0D65D05E18C23E2200B860D8 /* Gameplay Mode */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D7218B9DC3D008F6E39 /* ProjectileLaunchPath.h */,
+				0DA05D7318B9DC3D008F6E39 /* ProjectileLaunchPath.m */,
+				0DCA215318BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.h */,
+				0DCA215418BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.m */,
+				0DA05D7618B9DC3D008F6E39 /* GameplayViewController.h */,
+				0DA05D7718B9DC3D008F6E39 /* GameplayViewController.m */,
+			);
+			name = "Gameplay Mode";
+			sourceTree = "<group>";
+		};
+		0D65D05F18C23E8E00B860D8 /* Save/Load Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D8F18B9FD4C008F6E39 /* LoadViewController.h */,
+				0DA05D9018B9FD4C008F6E39 /* LoadViewController.m */,
+				0D63B65318BB4704008A81E2 /* LoadViewControllerDelegate.h */,
+				0DCA215618BE795E006D9DA7 /* SaveController.h */,
+				0DCA215718BE795E006D9DA7 /* SaveController.m */,
+				0DCA215918BE7C3C006D9DA7 /* SaveControllerDelegate.h */,
+			);
+			name = "Save/Load Controllers";
+			sourceTree = "<group>";
+		};
+		0DA05D1718B9DB58008F6E39 = {
+			isa = PBXGroup;
+			children = (
+				0DA05D2918B9DB58008F6E39 /* ps05 */,
+				0DA05D4218B9DB58008F6E39 /* ps05Tests */,
+				0DA05D2218B9DB58008F6E39 /* Frameworks */,
+				0DA05D2118B9DB58008F6E39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DA05D2118B9DB58008F6E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D2018B9DB58008F6E39 /* ps05.app */,
+				0DA05D3B18B9DB58008F6E39 /* ps05Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DA05D2218B9DB58008F6E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA269A618BE94BD00012E93 /* SpriteKit.framework */,
+				0DA05D2318B9DB58008F6E39 /* Foundation.framework */,
+				0DA05D2518B9DB58008F6E39 /* CoreGraphics.framework */,
+				0DA05D2718B9DB58008F6E39 /* UIKit.framework */,
+				0DA05D3C18B9DB58008F6E39 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DA05D2918B9DB58008F6E39 /* ps05 */ = {
+			isa = PBXGroup;
+			children = (
+				0D4DF5F718C3741800805434 /* Design 1 */,
+				0D4DF5F818C3741800805434 /* Design 2 */,
+				0D4DF5F918C3741800805434 /* Design 3 */,
+				0DA05D8418B9DD3D008F6E39 /* AppDelegate.h */,
+				0DA05D8518B9DD3D008F6E39 /* AppDelegate.m */,
+				0D65D05B18C23DE300B860D8 /* Images */,
+				0D65D05C18C23E0000B860D8 /* PhysicsEngine files */,
+				0D65D05D18C23E1700B860D8 /* Designer Mode */,
+				0DA05D6918B9DC3D008F6E39 /* en.lproj */,
+				0D65D05918C23DC200B860D8 /* GameBubble Controllers */,
+				0D65D05A18C23DD200B860D8 /* GameBubble Models */,
+				0D65D05E18C23E2200B860D8 /* Gameplay Mode */,
+				0DA05D3518B9DB58008F6E39 /* Images.xcassets */,
+				0DA05D9718B9FF8D008F6E39 /* Main.storyboard */,
+				0D02484E18BA5A1D00D824CB /* MainScreenViewController.h */,
+				0D02484F18BA5A1D00D824CB /* MainScreenViewController.m */,
+				0D65D05F18C23E8E00B860D8 /* Save/Load Controllers */,
+				0DA05D2A18B9DB58008F6E39 /* Supporting Files */,
+				0D65D07B18C27EF300B860D8 /* SkyBackgroundViewController.h */,
+				0D65D07C18C27EF300B860D8 /* SkyBackgroundViewController.m */,
+			);
+			path = ps05;
+			sourceTree = "<group>";
+		};
+		0DA05D2A18B9DB58008F6E39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D6718B9DC3D008F6E39 /* Constants.h */,
+				0DA05D6818B9DC3D008F6E39 /* Constants.m */,
+				0DA05D7418B9DC3D008F6E39 /* TwoDVector.h */,
+				0DA05D7518B9DC3D008F6E39 /* TwoDVector.m */,
+				0DA05D2B18B9DB58008F6E39 /* ps05-Info.plist */,
+				0DA05D2C18B9DB58008F6E39 /* InfoPlist.strings */,
+				0DA05D2F18B9DB58008F6E39 /* main.m */,
+				0DA05D3118B9DB58008F6E39 /* ps05-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DA05D4218B9DB58008F6E39 /* ps05Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D4818B9DB58008F6E39 /* ps05Tests.m */,
+				0DA05D4318B9DB58008F6E39 /* Supporting Files */,
+			);
+			path = ps05Tests;
+			sourceTree = "<group>";
+		};
+		0DA05D4318B9DB58008F6E39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D4418B9DB58008F6E39 /* ps05Tests-Info.plist */,
+				0DA05D4518B9DB58008F6E39 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DA05D6918B9DC3D008F6E39 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0DA05D6A18B9DC3D008F6E39 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DA05D1F18B9DB58008F6E39 /* ps05 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DA05D4C18B9DB58008F6E39 /* Build configuration list for PBXNativeTarget "ps05" */;
+			buildPhases = (
+				0DA05D1C18B9DB58008F6E39 /* Sources */,
+				0DA05D1D18B9DB58008F6E39 /* Frameworks */,
+				0DA05D1E18B9DB58008F6E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ps05;
+			productName = ps05;
+			productReference = 0DA05D2018B9DB58008F6E39 /* ps05.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DA05D3A18B9DB58008F6E39 /* ps05Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DA05D4F18B9DB58008F6E39 /* Build configuration list for PBXNativeTarget "ps05Tests" */;
+			buildPhases = (
+				0DA05D3718B9DB58008F6E39 /* Sources */,
+				0DA05D3818B9DB58008F6E39 /* Frameworks */,
+				0DA05D3918B9DB58008F6E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DA05D4118B9DB58008F6E39 /* PBXTargetDependency */,
+			);
+			name = ps05Tests;
+			productName = ps05Tests;
+			productReference = 0DA05D3B18B9DB58008F6E39 /* ps05Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DA05D1818B9DB58008F6E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = nus.cs3217;
+				TargetAttributes = {
+					0DA05D1F18B9DB58008F6E39 = {
+						DevelopmentTeam = JQNK74493B;
+						ProvisioningStyle = Automatic;
+					};
+					0DA05D3A18B9DB58008F6E39 = {
+						TestTargetID = 0DA05D1F18B9DB58008F6E39;
+					};
+				};
+			};
+			buildConfigurationList = 0DA05D1B18B9DB58008F6E39 /* Build configuration list for PBXProject "ps05" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DA05D1718B9DB58008F6E39;
+			productRefGroup = 0DA05D2118B9DB58008F6E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DA05D1F18B9DB58008F6E39 /* ps05 */,
+				0DA05D3A18B9DB58008F6E39 /* ps05Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DA05D1E18B9DB58008F6E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D6518B9DC2D008F6E39 /* bubble-red.png in Resources */,
+				0D4FDC1918BC7344008D1EF0 /* cannon.png in Resources */,
+				0D65D07518C26F1600B860D8 /* bolt_tesla_0008.png in Resources */,
+				0D65D07218C26F1600B860D8 /* bolt_tesla_0005.png in Resources */,
+				0D672F9918C34C3800DC1230 /* cannon-base-cut.png in Resources */,
+				0D65D07118C26F1600B860D8 /* bolt_tesla_0004.png in Resources */,
+				0D65D07718C26F1600B860D8 /* bolt_tesla_0010.png in Resources */,
+				0D65D06E18C26F1600B860D8 /* bolt_tesla_0001.png in Resources */,
+				0D65D07418C26F1600B860D8 /* bolt_tesla_0007.png in Resources */,
+				0DA05D7918B9DC3D008F6E39 /* InfoPlist.strings in Resources */,
+				0DA05D6318B9DC2D008F6E39 /* bubble-green.png in Resources */,
+				0DA05D2E18B9DB58008F6E39 /* InfoPlist.strings in Resources */,
+				0D0D644A18C1FB870092D005 /* back2.jpg in Resources */,
+				0DFE69A618C9013800490441 /* bubble-indestructible.png in Resources */,
+				0D4DF5FA18C3741800805434 /* Design 1 in Resources */,
+				0D4FDC1418BC7344008D1EF0 /* bubble-burst.png in Resources */,
+				0D4DF5FB18C3741800805434 /* Design 2 in Resources */,
+				0DA05D9918B9FF8D008F6E39 /* Main.storyboard in Resources */,
+				0D4FDC1818BC7344008D1EF0 /* cannon-base.png in Resources */,
+				0DA05D6118B9DC2D008F6E39 /* background.png in Resources */,
+				0D0D644918C1FB870092D005 /* bubble-rainbow.png in Resources */,
+				0D65D07318C26F1600B860D8 /* bolt_tesla_0006.png in Resources */,
+				0D65D07818C26F1600B860D8 /* fire.png in Resources */,
+				0D65D07A18C2735600B860D8 /* burst.png in Resources */,
+				0DA05D6418B9DC2D008F6E39 /* bubble-orange.png in Resources */,
+				0D65D07618C26F1600B860D8 /* bolt_tesla_0009.png in Resources */,
+				0D4FDC1718BC7344008D1EF0 /* bubble-star.png in Resources */,
+				0D65D06F18C26F1600B860D8 /* bolt_tesla_0002.png in Resources */,
+				0DA05D9118B9FD4C008F6E39 /* eraser-1.png in Resources */,
+				0D4FDC1618BC7344008D1EF0 /* bubble-lightning.png in Resources */,
+				0DA05D3618B9DB58008F6E39 /* Images.xcassets in Resources */,
+				0D4FDC1318BC7344008D1EF0 /* bubble-bomb.png in Resources */,
+				0D4DF5FC18C3741800805434 /* Design 3 in Resources */,
+				0D65D07018C26F1600B860D8 /* bolt_tesla_0003.png in Resources */,
+				0DA05D6218B9DC2D008F6E39 /* bubble-blue.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DA05D3918B9DB58008F6E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D4718B9DB58008F6E39 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DA05D1C18B9DB58008F6E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D9518B9FD4C008F6E39 /* DesignerViewControllerExtension.m in Sources */,
+				0DA05D9318B9FD4C008F6E39 /* GameBubbleBasicModel.m in Sources */,
+				0DA05D7C18B9DC3D008F6E39 /* PhysicsEngineObject.m in Sources */,
+				0D64E49718BFA58D005B63FC /* GameBubbleStar.m in Sources */,
+				0DA05D7818B9DC3D008F6E39 /* Constants.m in Sources */,
+				0D64E48918BF74EE005B63FC /* GameBubbleBasic.m in Sources */,
+				0DA05D7E18B9DC3D008F6E39 /* TwoDVector.m in Sources */,
+				0DCA215518BE420D006D9DA7 /* GameplayViewController+PersistenceManagement.m in Sources */,
+				0DA05D7D18B9DC3D008F6E39 /* ProjectileLaunchPath.m in Sources */,
+				0DA05D9418B9FD4C008F6E39 /* DesignerViewController.m in Sources */,
+				0DA05D8618B9DD3D008F6E39 /* AppDelegate.m in Sources */,
+				0DA05D7F18B9DC3D008F6E39 /* GameplayViewController.m in Sources */,
+				0DCA215818BE795E006D9DA7 /* SaveController.m in Sources */,
+				0D02485018BA5A1D00D824CB /* MainScreenViewController.m in Sources */,
+				0DA05D9218B9FD4C008F6E39 /* GameBubbleModel.m in Sources */,
+				0D65D07D18C27EF300B860D8 /* SkyBackgroundViewController.m in Sources */,
+				0D64E49118BFA56C005B63FC /* GameBubbleBomb.m in Sources */,
+				0DA05D7B18B9DC3D008F6E39 /* PhysicsEngine.m in Sources */,
+				0DA05D3018B9DB58008F6E39 /* main.m in Sources */,
+				0D64E48E18BFA3A9005B63FC /* GameBubbleLightning.m in Sources */,
+				0DA05D9618B9FD4C008F6E39 /* LoadViewController.m in Sources */,
+				0DA05D5818B9DC18008F6E39 /* CircularObjectModel.m in Sources */,
+				0D64E49418BFA57E005B63FC /* GameBubbleIndestructible.m in Sources */,
+				0D16B16718C230540011C6F7 /* GameBubbleRainbow.m in Sources */,
+				0D64E48818BF74EE005B63FC /* GameBubble.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DA05D3718B9DB58008F6E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA05D4918B9DB58008F6E39 /* ps05Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DA05D4118B9DB58008F6E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DA05D1F18B9DB58008F6E39 /* ps05 */;
+			targetProxy = 0DA05D4018B9DB58008F6E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DA05D2C18B9DB58008F6E39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DA05D2D18B9DB58008F6E39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DA05D4518B9DB58008F6E39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DA05D4618B9DB58008F6E39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DA05D6A18B9DC3D008F6E39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DA05D6B18B9DC3D008F6E39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DA05D9718B9FF8D008F6E39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DA05D9818B9FF8D008F6E39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DA05D4A18B9DB58008F6E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0DA05D4B18B9DB58008F6E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DA05D4D18B9DB58008F6E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ps05/ps05-Prefix.pch";
+				INFOPLIST_FILE = "ps05/ps05-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.bubblesaga.100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0DA05D4E18B9DB58008F6E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ps05/ps05-Prefix.pch";
+				INFOPLIST_FILE = "ps05/ps05-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.bubblesaga.100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0DA05D5018B9DB58008F6E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ps05.app/ps05";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ps05/ps05-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ps05Tests/ps05Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0DA05D5118B9DB58008F6E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ps05.app/ps05";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ps05/ps05-Prefix.pch";
+				INFOPLIST_FILE = "ps05Tests/ps05Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DA05D1B18B9DB58008F6E39 /* Build configuration list for PBXProject "ps05" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA05D4A18B9DB58008F6E39 /* Debug */,
+				0DA05D4B18B9DB58008F6E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DA05D4C18B9DB58008F6E39 /* Build configuration list for PBXNativeTarget "ps05" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA05D4D18B9DB58008F6E39 /* Debug */,
+				0DA05D4E18B9DB58008F6E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DA05D4F18B9DB58008F6E39 /* Build configuration list for PBXNativeTarget "ps05Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA05D5018B9DB58008F6E39 /* Debug */,
+				0DA05D5118B9DB58008F6E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DA05D1818B9DB58008F6E39 /* Project object */;
+}
